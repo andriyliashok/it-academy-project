@@ -1,0 +1,15 @@
+html{
+  font-size: 0.9375em;
+  line-height: 1.7333;
+}
+
+body{
+  min-width: 320px;
+
+
+}
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

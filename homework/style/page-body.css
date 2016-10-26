@@ -1,0 +1,55 @@
+.picture {
+  background: url("./images/collection.png") no-repeat;
+  width: auto;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.shop{
+  padding: 90px 40px 111px;
+  font-weight: 600;
+}
+
+.shop p{
+  font-size: 5em;
+  line-height: 0.5em;
+  margin: 18px 0px;
+}
+
+.shop p:first-child{
+  font-size: 5.4em;
+}
+
+.shop p span{
+  font-size: 0.5em;
+}
+
+.picture .shop p:nth-child(3){
+  font-size: 1.14em;
+  padding-top: 11px;
+  padding-left: 8px;
+  color: #666666
+}
+
+.shop-now{
+  margin-top: 71px;
+}
+
+.shop .shop-now a{
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-size: 0.8em;
+  line-height: 3.7em;
+  width: 110px;
+  background-color: #be926f;
+  text-align: center;
+  transition: background-color 0.5s ease-out ;
+}
+
+.shop .shop-now a:hover{
+  background-color: #e3b28b;
+}
+

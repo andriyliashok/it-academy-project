@@ -1,0 +1,101 @@
+
+
+.post{
+  text-transform: uppercase;
+  font-weight: 600
+}
+
+.new-post{
+  border-top: 1px solid #e6e6e6;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0 31px;
+}
+
+.new-post a{
+  font-size: 0.9em;
+  color: #999999;
+  text-decoration: none;
+
+}
+
+.new-post a:hover{
+  color: #be926f;
+}
+.pointer-left, .pointer-right{
+  padding-top: 7px;
+}
+.new-post .pointer-left a:before{
+  content: '';
+  display: block;
+  float: left;
+  background: url("images/left.png") no-repeat center center;
+  width: 13px;
+  height: 23px;
+  margin-right: 18px;
+}
+
+.new-post .pointer-right a:before{
+  content: '';
+  display: block;
+  float: right;
+  background: url("images/right.png") no-repeat center center;
+  width: 13px;
+  height: 23px;
+  margin-left: 18px;
+}
+
+.new-post .pointer-name{
+  font-size: 1.2em;
+  letter-spacing: 4px;
+
+}
+
+.slide{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.slide .slide1{
+  border-bottom: 1px solid #e6e6e6;
+}
+.slide .slide1:hover{
+  border-bottom: 1px solid #be926f;
+}
+
+.slide img{
+  width: 267px;
+  height: 206px;
+  border: 1px solid #ffe0cb;
+  object-fit: cover;
+}
+
+.slide .product-category, .slide .product-name{
+  margin: 19px 0;
+}
+
+.slide .product-name{
+  text-transform: none;
+}
+
+.slide .product-date{
+  text-transform: none;
+  color: #a9a9a9;
+  padding-bottom: 11px;
+  position: relative;
+}
+
+.slide .product-date:before{
+  content: '';
+  display: block;
+  background: url("images/clock.png") no-repeat center center;
+  width: 16px;
+  height: 16px;
+  float: left;
+  position: absolute;
+  top: 5px;
+  left: 61px;
+  margin-right: 34px;
+}

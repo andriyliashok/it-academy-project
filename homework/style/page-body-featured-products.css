@@ -1,0 +1,239 @@
+
+.featured-products .title{
+  margin-top: 56px;
+  font-size: 1.1333em;
+  line-height: 1.2941;
+}
+
+.featured-products-list{
+  display: flex;
+  padding: 0px;
+  list-style: none;
+}
+
+.featured-product{
+  margin-top: 10px;
+  flex-basis: 25%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border:1px solid #e6e6e6;
+  text-align: center;
+}
+
+.product-actions{
+  width: 210px;
+  height: 210px;
+  border: 1px solid #ffe0cb;
+  margin: 10px auto;
+  position: relative;
+}
+
+.product-actions:before{
+  content: '';
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.8);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.product-actions .label{
+  position: absolute;
+  top: -16px;
+  right: -20px;
+  width: 41px;
+  height: 41px;
+  background-color: #be926f;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 3.5em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.product-actions img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.action-links{
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 130px;
+  height: 84px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.featured-product .product-name{
+  color: #232323;
+  transition: color 0.5s;
+  padding-top: 26px;
+  letter-spacing: 1px;
+}
+.product-name{
+  font-size: 1.2em;
+  line-height: 1.3em;
+  color: #232323;
+  font-weight: 400;
+}
+
+.featured-product .product-category {
+  padding-top: 7px;
+}
+.product-category{
+  font-size: 0.8em;
+  color: #999999;
+}
+.featured-product .product-price{
+  padding-bottom: 22px;
+}
+
+.product-price{
+  font-size: 1.3em;
+  line-height: 1.2em;
+  color: #be926f;
+}
+.product-price del{
+  color: #999999;
+  margin-right: 10px;
+}
+
+.featured-product:hover .action-links,
+.featured-product:hover .product-actions:before,
+.featured-product:hover .product-name{
+  color: #be926f;
+  opacity: 1;
+}
+
+
+.action-links a{
+  text-decoration: none;
+}
+
+.action-links ul{
+  padding-left: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-links .add{
+  display: block;
+  background-color: #be926f;
+  color: #ffffff;
+  padding: 8px 0;
+  margin-bottom: 19px;
+  transition: background-color 0.5s ease-out ;
+}
+
+.action-links .add:hover{
+  background-color: #e3b28b;
+}
+
+.action-links ul a{
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #be926f;
+  transition: border 0.3s ease-out;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.action-links ul a:hover{
+  border: 1px solid #86410b;
+}
+
+.action-links .like{
+  background-image: url("images/like.png");
+}
+.action-links .row{
+  background-image: url("images/row.png");
+}
+.action-links .zoom{
+  background-image: url("images/zoom.png");
+}
+
+.products-small{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-small{
+  margin-top: 15px;
+  flex-basis: 49%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border:1px solid #e6e6e6;
+  text-align: left;
+  display: flex;
+}
+
+.sale-image{
+  width: 79px;
+  height: 79px;
+  border: 1px solid #ffe0cb;
+  margin: 19px;
+}
+
+.product-small-left{
+  flex-basis: 49%;
+  display: flex;
+}
+
+.sale-image img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: -13px 11px;
+}
+
+.sale{
+  margin-top: 26px;
+}
+.product-small-right .sale{
+  margin-left: 35px;
+  margin-top: 20px;
+}
+
+.product-small .product-price{
+  font-size: 1em;
+  margin-top: 1px;
+}
+
+.product-small-right .product-category:before{
+  content: '';
+  border: 1px solid #be926f;
+  font-size: 26px;
+  width: 18px;
+  margin-top: 8px;
+  margin-right: 7px;
+  float: left;
+  display: block;
+}
+
+.product-small-right .product-name{
+  font-size: 1.3em;
+  margin-top: 5px;
+}
+
+.product-small-right .product-price{
+  margin-top: 6px;
+}
+
+.partner{
+  border:1px solid #e6e6e6;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 11px 20px;
+}
