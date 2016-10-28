@@ -49,12 +49,20 @@
 .new-post .pointer-name{
   font-size: 1.2em;
   letter-spacing: 4px;
+}
 
+@media (max-width: 400px){
+  .new-post .pointer-name{
+    font-size: 1em;
+    letter-spacing: 1px;
+
+  }
 }
 
 .slide{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   text-align: center;
 }
 

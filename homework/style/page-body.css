@@ -1,13 +1,26 @@
-.picture {
-  background: url("./images/collection.png") no-repeat;
-  width: auto;
-  height: 100%;
+.picture img{
   margin-top: 30px;
+  margin-bottom: -8px;
+  height: 480px;
+  max-width: 100%;
+  object-fit: cover;
+}
+.slider{
+  position: relative;
 }
 
+
 .shop{
-  padding: 90px 40px 111px;
+  position: absolute;
+  top: 120px;
+  left: 55px;
   font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .shop{
+    left: 20px;
+  }
 }
 
 .shop p{
@@ -16,15 +29,27 @@
   margin: 18px 0px;
 }
 
+@media (max-width: 500px) {
+  .shop p{
+    font-size: 3.5em;
+  }
+}
+
 .shop p:first-child{
   font-size: 5.4em;
+}
+
+@media (max-width: 500px) {
+  .shop p:first-child{
+    font-size: 3.5em;
+  }
 }
 
 .shop p span{
   font-size: 0.5em;
 }
 
-.picture .shop p:nth-child(3){
+.shop p:nth-child(3){
   font-size: 1.14em;
   padding-top: 11px;
   padding-left: 8px;

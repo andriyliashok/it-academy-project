@@ -1,6 +1,7 @@
 .subscription .container{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 49px 0px 54px;
 }
 
@@ -30,6 +31,14 @@
   transition: border 0.3s;
 }
 
+@media (max-width: 400px){
+  .subscription input{
+    width: 300px;
+    padding-left: 0;
+
+  }
+}
+
 .subscription input:hover{
   border: 1px solid #a9a9a9;
 }
@@ -49,6 +58,13 @@
   text-transform: uppercase;
   padding-left: 45px;
   transition: border 0.3s;
+}
+
+@media (max-width: 620px){
+  .subscription button{
+   margin-left: 0;
+
+  }
 }
 
 .subscription button:hover{

@@ -5,10 +5,18 @@
 .footer .container{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   font-size: 0.9em;
   color: #999999;
   padding: 25px 0;
 }
+
+@media (max-width: 880px){
+  .footer .container{
+    flex-direction: column;
+  }
+}
+
 .footer .container a{
   text-decoration: none;
   color: #999999;
@@ -24,6 +32,13 @@
 .footer .twits{
   margin-left: 150px;
 }
+
+@media (max-width: 880px){
+  .footer .twits{
+    margin-left: 0;
+  }
+}
+
 .downloads a:nth-child(2){
   padding: 0 20px;
 }
