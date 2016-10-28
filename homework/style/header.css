@@ -96,7 +96,7 @@ header .menu{
   list-style: none;
   display: flex;
   justify-content: space-between;
-  margin: 0px;
+  margin: 0;
 }
 
 @media (max-width: 750px){
@@ -108,9 +108,8 @@ header .menu{
 }
 
 .menu ul li{
-  margin-right: 49px;
+  margin-right: 53px;
   font-size: 1em;
-  letter-spacing: 2px;
 }
 
 @media (max-width: 750px){

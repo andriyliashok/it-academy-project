@@ -5,7 +5,7 @@
 }
 
 .testimonials .container{
-  padding: 40px 0px 45px
+  padding: 40px 0 45px
 }
 
 .testimonials .title {
@@ -19,7 +19,6 @@
   color: #cccccc;
   font-size: 1.1em;
   padding-bottom: 10px;
-  letter-spacing: 1px;
 }
 
 .testimonials .line {

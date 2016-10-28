@@ -8,7 +8,7 @@
 .featured-products-list{
   display: flex;
   flex-wrap: wrap;
-  padding: 0px;
+  padding: 0;
   list-style: none;
 }
 
@@ -58,8 +58,8 @@
 
 @media (max-width: 970px) {
   .product-actions .label{
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -85,7 +85,6 @@
   color: #232323;
   transition: color 0.5s;
   padding-top: 26px;
-  letter-spacing: 1px;
 }
 .product-name{
   font-size: 1.2em;
@@ -128,7 +127,7 @@
 }
 
 .action-links ul{
-  padding-left: 0px;
+  padding-left: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
