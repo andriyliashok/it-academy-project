@@ -1,0 +1,72 @@
+.subscription .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 49px 0 54px;
+}
+
+.subscription h3{
+  margin: 0;
+}
+
+.subscription p{
+  margin: 0;
+  color: #666666;
+  font-size: 1em;
+  /* letter-spacing: 1px; */
+}
+.subscription form{
+  margin-top: 14px;
+}
+
+.subscription input{
+  width: 375px;
+  height: 49px;
+  border: 1px solid #e8e8e8;
+  outline: none;
+  padding-left: 15px;
+  color: #cccccc;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  transition: border 0.3s;
+}
+
+@media (max-width: 400px){
+  .subscription input{
+    width: 300px;
+    padding-left: 0;
+
+  }
+}
+
+.subscription input:hover{
+  border: 1px solid #a9a9a9;
+}
+
+.subscription button{
+  width: 200px;
+  height: 50px;
+  margin-left: 10px;
+  border: 1px solid #be926f;
+  outline: none;
+  background-color: #f8f8f8;
+  background-image: url("images/plane.png");
+  background-position: 20px;
+  background-repeat: no-repeat;
+  color: #333333;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding-left: 45px;
+  transition: border 0.3s;
+}
+
+@media (max-width: 620px){
+  .subscription button{
+   margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+.subscription button:hover{
+  border: 1px solid #86410b;
+}

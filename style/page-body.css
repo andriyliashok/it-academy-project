@@ -1,0 +1,80 @@
+.picture img{
+  margin-top: 30px;
+  margin-bottom: -8px;
+  height: 480px;
+  max-width: 100%;
+  object-fit: cover;
+}
+.slider{
+  position: relative;
+}
+
+
+.shop{
+  position: absolute;
+  top: 120px;
+  left: 55px;
+  font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .shop{
+    left: 20px;
+  }
+}
+
+.shop p{
+  font-size: 5em;
+  line-height: 0.5em;
+  margin: 18px 0px;
+}
+
+@media (max-width: 500px) {
+  .shop p{
+    font-size: 3.5em;
+  }
+}
+
+.shop p:first-child{
+  font-size: 5.4em;
+}
+
+@media (max-width: 500px) {
+  .shop p:first-child{
+    font-size: 3.5em;
+  }
+}
+
+.shop p span{
+  font-size: 0.5em;
+}
+
+.shop p:nth-child(3){
+  font-size: 1.14em;
+  padding-top: 11px;
+  padding-left: 8px;
+  color: #666666
+}
+
+.shop-now{
+  margin-top: 71px;
+}
+
+.shop .shop-now a{
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-size: 0.8em;
+  line-height: 3.7em;
+  width: 110px;
+  background-color: #be926f;
+  text-align: center;
+  transition: background-color 0.5s ease-out ;
+}
+
+.shop .shop-now a:hover{
+  background-color: #e3b28b;
+}
+

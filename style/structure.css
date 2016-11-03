@@ -1,0 +1,21 @@
+html{
+  font-size: 0.9375em;
+  line-height: 1.7333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  min-width: 320px;
+
+
+}
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.page-bodyblog{
+  background-color: #f7f7f7;
+  padding-top: 30px;
+}
