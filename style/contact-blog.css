@@ -1,0 +1,27 @@
+.contact-blog .container{
+  background-color: #e7e7e7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0px;
+  text-transform: uppercase;
+}
+
+.contact-blog .blog{
+  padding-left: 28px;
+  font-weight: 400;
+}
+
+.contact-blog .contact{
+  padding-right: 28px;
+}
+
+.contact-blog a{
+  color: #666666;
+  transition: color 0.3s;
+}
+
+.contact-blog a:hover{
+  color: #999999;
+}
