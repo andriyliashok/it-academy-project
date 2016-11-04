@@ -5,6 +5,18 @@
   padding: 49px 0 54px;
 }
 
+@media (max-width: 1116px){
+  .subscription .container{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1115px){
+  .subscription .newsletter{
+    text-align: center;
+  }
+}
+
 .subscription h3{
   margin: 0;
 }
@@ -13,10 +25,17 @@
   margin: 0;
   color: #666666;
   font-size: 1em;
-  /* letter-spacing: 1px; */
 }
 .subscription form{
   margin-top: 14px;
+  display: flex;
+}
+
+@media (max-width: 620px){
+  .subscription form{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .subscription input{
@@ -31,10 +50,9 @@
   transition: border 0.3s;
 }
 
-@media (max-width: 400px){
+@media (max-width: 420px){
   .subscription input{
     width: 300px;
-    padding-left: 0;
 
   }
 }
@@ -49,10 +67,7 @@
   margin-left: 10px;
   border: 1px solid #be926f;
   outline: none;
-  background-color: #f8f8f8;
-  background-image: url("images/plane.png");
-  background-position: 20px;
-  background-repeat: no-repeat;
+  background: #f8f8f8 url("images/plane.png") no-repeat 20px;
   color: #333333;
   font-size: 1.2em;
   text-transform: uppercase;
@@ -62,7 +77,6 @@
 
 @media (max-width: 620px){
   .subscription button{
-   margin-left: 0;
     margin-top: 10px;
   }
 }

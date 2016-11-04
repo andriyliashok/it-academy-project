@@ -5,6 +5,12 @@
   justify-content: space-between;
 }
 
+@media (max-width: 700px){
+  .page-blog .container{
+    flex-direction: column;
+  }
+}
+
 .page-blog .sidebar{
   flex-basis: 270px;
   flex-shrink: 0;
@@ -12,7 +18,8 @@
 }
 
 .page-blog .sidebar form{
-  position: relative;
+  display: flex;
+  border: 1px solid #be926f;
 }
 
 .page-blog .sidebar input{
@@ -20,24 +27,21 @@
   height: 45px;
   padding-left: 27px;
   outline: none;
-  border: 1px solid #be926f;
+  border: none;
   color: #999999;
   font-size: 1.1em;
   background-color: #f7f7f7;
+  flex-grow: 1;
 }
 
 
 .page-blog .sidebar button{
-  background-image: url("./images/icon.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #be926f;
-  width: 43px;
+  background: #be926f url("./images/icon.png") no-repeat center center;
+  flex-basis: 43px;
   height: 45px;
+  border: none;
   outline: none;
   font-size: 0;
-  border: 1px solid #be926f;
-  position: absolute;
   transition: background-color 0.5s ease-out ;
 }
 
@@ -182,13 +186,75 @@
   padding: 20px 29px 20px 18px;
 }
 
+@media (max-width: 850px){
+  .content .text-footer{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.content .text-footer-left{
+  align-self: center;
+}
+
 .content .text-footer-right{
    display: flex;
    align-items: center;
  }
+
 .content .text-footer-right a{
- height: 36px;
-  margin-left: 5px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.text-footer-right .text-footer-face, .text-footer-twit, .text-footer-link, .text-footer-goog{
+  width: 36px;
+  height: 36px;
+}
+
+.text-footer-right .text-footer-face{
+  background: url("images/blog-face-befofe.png") no-repeat center center;
+}
+
+.text-footer-right .text-footer-twit{
+  background: url("images/blog-twit-before.png") no-repeat center center;
+}
+
+.text-footer-right .text-footer-link{
+  background: url("images/blog-link-before.png") no-repeat center center;
+}
+
+.text-footer-right .text-footer-goog{
+  background: url("images/blog-google-before.png") no-repeat center center;
+}
+
+.text-footer-right .text-footer-face:before, .text-footer-twit:before, .text-footer-link:before, .text-footer-goog:before{
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  transition: opacity 0.5s;
+}
+
+.text-footer-right .text-footer-face:before{
+  background: url("images/blog-face.png") no-repeat center center;
+}
+
+.text-footer-right .text-footer-twit:before{
+  background: url("images/blog-twit.png") no-repeat center center;
+}
+
+.text-footer-right .text-footer-link:before{
+  background: url("images/blog-link.png") no-repeat center center;
+}
+
+.text-footer-right .text-footer-goog:before{
+  background: url("images/blog-google.png") no-repeat center center;
+}
+
+.content .text-footer-right a:hover:before{
+  opacity: 0;
 }
 
 .content .text-footer-left a{

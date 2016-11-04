@@ -24,19 +24,36 @@
   color: #999999;
   padding: 0 18px;
   text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
 }
 
 .new-post a:hover{
   color: #be926f;
 }
+
 .pointer-left, .pointer-right{
   padding-top: 7px;
 }
+
 .new-post .pointer-left a:before{
   content: '';
   display: block;
   float: left;
   background: url("images/left.png") no-repeat center center;
+  width: 13px;
+  height: 23px;
+  position: absolute;
+  top: -5px;
+  opacity: 1;
+  transition: opacity 0.3s ;
+}
+
+.new-post .pointer-left a:after{
+  content: '';
+  display: block;
+  float: left;
+  background: url("images/pointer-left-color.png") no-repeat center center;
   width: 13px;
   height: 23px;
 }
@@ -48,7 +65,25 @@
   background: url("images/right.png") no-repeat center center;
   width: 13px;
   height: 23px;
+  position: absolute;
+  top: -5px;
+  right: -13px;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
+
+.new-post .pointer-right a:after{
+  content: '';
+  display: block;
+  float: right;
+  background: url("images/pointer-right-color.png") no-repeat center center;
+  width: 13px;
+  height: 23px;
+}
+
+.new-post a:hover:before{
+   opacity: 0;
+ }
 
 .new-post .pointer-name{
   font-size: 1.2em;

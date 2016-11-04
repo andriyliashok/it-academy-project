@@ -21,7 +21,9 @@
 .footer .container a{
   text-decoration: none;
   color: #999999;
+  position: relative;
 }
+
 
 .footer .container a:hover{
   text-decoration: underline;
@@ -35,6 +37,45 @@
   .footer .twits{
     margin-left: 0;
   }
+}
+
+.twits .twit:before{
+  content: '';
+  display: block;
+  background: url("images/footer-twitter.png") no-repeat center center;
+  width: 19px;
+  height: 16px;
+  position: absolute;
+  top: -3px;
+  transition: opacity 0.3s;
+}
+
+.twits .goog:before{
+  content: "";
+  display: block;
+  background: url("images/footer-google.png") no-repeat center center;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: -5px;
+  right: 40px;
+  transition: opacity 0.3s;
+}
+
+.twits .face:before{
+  content: "";
+  display: block;
+  background: url("images/footer-face.png") no-repeat center center;
+  width: 9px;
+  height: 19px;
+  position: absolute;
+  top: -6px;
+  right: 0;
+  transition: opacity 0.3s;
+}
+
+.twits a:hover:before{
+  opacity: 0;
 }
 
 .downloads a:nth-child(2){
