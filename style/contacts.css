@@ -44,7 +44,7 @@
 }
 
 @media (max-width: 600px){
-  .contact{
+  .contacts .contact{
     flex-basis: 100%;
   }
 }
