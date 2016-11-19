@@ -87,8 +87,8 @@ header form button:hover{
 header .menu{
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
-
 
 .menu ul{
   padding-left: 0;
@@ -99,11 +99,76 @@ header .menu{
   margin: 0;
 }
 
+/*hide menu*/
+
+.hide-menu a{
+  background: url("images/menu-icon.png") no-repeat center center;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.hide-menu{
+  display: none;
+}
+
 @media (max-width: 750px){
 
-  .menu ul{
+  .menu .hide-menu{
     display: block;
+    padding-bottom: 30px;
   }
+}
+
+@media (max-width: 750px){
+
+  .menu nav ul{
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: rgba(35,35,35,0.9);
+    z-index: 1;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 750px){
+  .menu nav{
+    display: none;
+  }
+}
+
+.menu li{
+  position: relative;
+}
+.menu li.open{
+  background: rgba(35,35,35,0.9);
+}
+
+.menu li ul{
+  display: none;
+  position: absolute;
+  background: rgba(35,35,35,0.9);
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  padding-bottom: 0;
+}
+
+@media (max-width: 750px){
+
+  .menu li ul{
+    top: 0;
+    left: 100%;
+  }
+}
+
+/*hide menu end*/
+
+.menu li ul li{
+  margin-right: 8px;
+  padding: 10px;
 }
 
 .menu ul li{

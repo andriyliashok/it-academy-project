@@ -11,36 +11,3 @@
 @import url(contact-blog.css);
 @import url(page-blog.css);
 
-.new{
-  background: red;
-}
-.menu li{
-  position: relative;
-}
-.menu li.open{
-  background: #2b2b2b;
-}
-
-.menu li ul{
-  display: none;
-  position: absolute;
-  background: #2b2b2b;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  padding-bottom: 0;
-  opacity: 0.8;
-}
-.menu li ul li{
- margin-right: 8px;
-  padding: 10px;
-}
-
-.hide-menu a{
-  background: url("images/images.png") no-repeat center center;
-  width: 40px;
-  height: 40px;
-  display: block;
-}
-
-

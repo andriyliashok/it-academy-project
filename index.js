@@ -2,20 +2,19 @@ $(function () {
   var $headerLi = $('.menu nav li').has('ul');
 
 
-  $headerLi.find('a').on('click', function (e) {
+  $headerLi.find('a:first').on('click', function (e) {
     e.preventDefault();
 
-     $(this).siblings('ul').stop().fadeToggle();
-      $(this).closest('li').toggleClass('open');
+    $(this).siblings('ul').stop().slideToggle();
+    $('.menu nav li').has('ul').toggleClass('open');
   });
 
   var $headerHideMenu = $('.hide-menu a');
 
-
   $headerHideMenu.on('click', function (e) {
     e.preventDefault();
 
-    $headerHideMenu.siblings('nav').hide();
+    $('.menu nav').stop().slideToggle();
   })
 
 });
