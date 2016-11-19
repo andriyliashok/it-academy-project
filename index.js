@@ -9,6 +9,7 @@ $(function () {
     $('.menu nav li').has('ul').toggleClass('open');
   });
 
+
   var $headerHideMenu = $('.hide-menu a');
 
   $headerHideMenu.on('click', function (e) {
