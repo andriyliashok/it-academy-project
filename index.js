@@ -16,6 +16,9 @@ $(function () {
     e.preventDefault();
 
     $('.menu nav').stop().slideToggle();
+    $('.menu .line1').toggleClass('line1-transform');
+    $('.menu .line2').toggleClass('line2-transform');
+    $('.menu .line3').toggleClass('line3-transform');
   })
 
 });

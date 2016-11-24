@@ -99,13 +99,39 @@ header .menu{
   margin: 0;
 }
 
+
 /*hide menu*/
 
+
 .hide-menu a{
-  background: url("images/menu-icon.png") no-repeat center center;
-  width: 40px;
-  height: 40px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 30px;
+
+}
+
+.hide-menu div{
+  height: 8px;
+  background: #ffffff;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.hide-menu .line2-transform{
+  opacity: 0;
+  transform: translate(-40px);
+}
+
+.hide-menu .line1-transform{
+ transform: translate(0px,12px) rotate(45deg);
+
+}
+
+.hide-menu .line3-transform{
+  transform: translate(0px,-10px) rotate(-45deg);
+
 }
 
 .hide-menu{
@@ -125,7 +151,7 @@ header .menu{
   .menu nav ul{
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: 0;
     background: rgba(35,35,35,0.9);
     z-index: 1;
