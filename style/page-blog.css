@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 
-@media (max-width: 700px){
+@media (max-width: 830px){
   .page-blog .container{
     flex-direction: column;
   }
@@ -17,10 +17,11 @@
   margin-right: 30px;
 }
 
-@media (max-width: 700px){
+@media (max-width: 830px){
   .page-blog .sidebar{
     order: 1;
-    padding-left: 30px;
+    margin-right: 0;
+    padding: 10px 10px;
   }
 }
 

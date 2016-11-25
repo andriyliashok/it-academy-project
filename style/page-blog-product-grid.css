@@ -1,49 +1,12 @@
-.category-grid .by-category + ul li:nth-child(1) a:before{
-  background: url("images/product-grid-category-1.png") no-repeat center;
-}
 
-.category-grid .by-category + ul li:nth-child(2) a:before{
-  background: url("images/product-grid-category-2.png") no-repeat center;
+.category-grid .by-category + ul li a:before{
+  display: none;
 }
-
-.category-grid .by-category + ul li:nth-child(3) a:before{
-  background: url("images/product-grid-category-3.png") no-repeat center;
-}
-
-.category-grid .by-category + ul li:nth-child(4) a:before{
-  background: url("images/product-grid-category-4.png") no-repeat center;
-}
-
-.category-grid .by-category + ul li:nth-child(5) a:before{
-  background: url("images/product-grid-category-5.png") no-repeat center;
-}
-
-.category-grid .by-category + ul li:nth-child(6) a:before{
-  background: url("images/product-grid-category-6.png") no-repeat center;
-}
-
-.category-grid .by-category + ul li:nth-child(7) a:before{
-  background: url("images/product-grid-category-7.png") no-repeat center;
-}
-
-.category-grid .by-category + ul li:nth-child(8) a:before{
-  background: url("images/product-grid-category-8.png") no-repeat center;
-}
-
-.category-grid .by-category + ul li:nth-child(9) a:before{
-  background: url("images/product-grid-category-9.png") no-repeat center;
-}
-
-.category-grid .by-category + ul li:nth-child(10) a:before{
-  background: url("images/product-grid-category-10.png") no-repeat center;
-}
-
-.category-grid .by-category + ul li:nth-child(11) a:before{
-  background: url("images/product-grid-category-11.png") no-repeat center;
-}
-
-.category-grid .by-category + ul li:nth-child(12) a:before{
-  background: url("images/product-grid-category-12.png") no-repeat center;
+.category-grid .by-category + ul li a{
+  background-position: center left ;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: block;
 }
 
 .category-grid .filter-line{
@@ -51,7 +14,7 @@
 }
 
 .category-grid .filter-line-color{
-   padding: 2px;
+   padding: 1px;
    background: #be926f;
    width: 80%;
    margin: 30px 0;
@@ -66,7 +29,7 @@
   height: 10px;
   display: block;
   position: absolute;
-  top: -3px;
+  top: -4px;
 }
 
 .category-grid .filter-line-color span:first-child{
@@ -163,4 +126,16 @@
 .container .shop-products .featured-product{
   flex-basis: 33.3333%;
   margin: 0;
+}
+
+@media (max-width: 1050px){
+  .container .shop-products .featured-product{
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 520px){
+  .container .shop-products .featured-product{
+    flex-basis: 100%;
+  }
 }
