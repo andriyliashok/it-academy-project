@@ -1,9 +1,13 @@
 .page-blog .container {
-  margin-top: 30px;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
+   margin-top: 30px;
+   padding: 0;
+   display: flex;
+   justify-content: space-between;
+ }
+.page-blog {
+  padding-bottom: 60px;
 }
+
 
 @media (max-width: 830px){
   .page-blog .container{

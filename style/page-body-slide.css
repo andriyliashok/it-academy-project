@@ -5,11 +5,6 @@
   font-weight: 600
 }
 
-@media (max-width: 1200px){
-  .post{
-    max-width: 800px;
-  }
-}
 
 .new-post{
   border-top: 1px solid #e6e6e6;
@@ -104,18 +99,6 @@
   text-align: center;
 }
 
-@media (max-width: 1200px){
-  .slide{
-    justify-content: space-around;
-  }
-}
-
-@media (max-width: 630px){
-  .slide{
-    justify-content: center;
-  }
-}
-
 .slide .slide1{
   border-bottom: 1px solid #e6e6e6;
 }
@@ -135,6 +118,7 @@
   height: 206px;
   border: 1px solid #ffe0cb;
   object-fit: cover;
+  margin: 0 auto;
 }
 
 .slide .product-category, .slide .product-name{
