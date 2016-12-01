@@ -48,7 +48,7 @@
 
 
 .page-blog .sidebar button{
-  background: #be926f url("./images/icon.png") no-repeat center center;
+  background: #be926f url("images/icon.png") no-repeat center center;
   flex-basis: 43px;
   height: 45px;
   border: none;
