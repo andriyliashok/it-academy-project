@@ -103,38 +103,40 @@
 
 .content-sort-links a{
   display: block;
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   border: 1px solid #be926f;
+  text-align: center;
+  text-decoration: none;
+  color: #666666;
 }
 
-.content-sort-links a:first-child{
+.content-sort-links .album-list{
   background: #be926f url("images/sor-by-1.png") no-repeat center center;
 }
 
-.content-sort-links a:last-child{
-  background: url("images/sor-by-2.png") no-repeat center center;
+.content-sort-links .page-list{
+  background:  url("images/sor-by-2.png") no-repeat center center;
 }
 
 .container .shop-products{
   background: #ffffff;
   margin-top: 30px;
   margin-bottom: 30px;
-  display: block;
-  max-width: 870px;
 }
 
 
 .container .shop-products .featured-products-list{
   margin: 0;
   flex-basis: 100%;
+  justify-content: flex-end;
 }
 
 .container .shop-products .featured-product{
   flex-basis: 33.3333%;
   margin: 0;
 }
-/*
+
 @media (max-width: 1050px){
   .container .shop-products .featured-product{
     flex-basis: 50%;
@@ -146,20 +148,56 @@
     flex-basis: 100%;
   }
 }
-*/
 
-.content-sort-links button{
+.content-sort-links .page-list-three{
   background: #ffffff url("images/sort-link-arrow.png") no-repeat center center;
-  width: 28px;
-  height: 28px;
   border: 1px solid #cccccc;
 }
 
-
-
-.slick-dots li{
-  width: 28px;
-  height: 28px;
-  border: 1px solid #cccccc;
+.container .shop-products .featured-product-shop {
+  flex-basis: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
 }
 
+.product-actions-shop {
+  width: 150px;
+  height: 130px;
+  border: 1px solid #ffe0cb;
+  margin: 15px;
+  position: relative;
+}
+
+.featured-product .product-name-shop {
+  padding-top: 0;
+  order: 1;
+}
+
+.featured-product .product-category-shop {
+  padding-top: 0;
+  order: 2;
+}
+
+.featured-product .product-price-shop {
+  padding-bottom: 0;
+  padding-right: 30px;
+  order: 3;
+}
+
+.content-sort-links .album-list-shop-1{
+  background: url("images/sor-by-1-color.png") no-repeat center center;
+}
+.content-sort-links .album-list-shop{
+  background: #be926f url("images/sor-by-1.png") no-repeat center center;
+}
+
+.content-sort-links .page-list-shop{
+  background: #be926f url("images/sor-by-2-color.png") no-repeat center center;
+}
+
+.content-sort-links .page-list-one, .content-sort-links .page-list-two{
+  margin-right: 3px;
+  border: 1px solid #cccccc;
+}

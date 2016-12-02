@@ -19,30 +19,20 @@ $(function () {
   });
 // hide-menu
   $(window).on('resize', function () {
-    if ($(window).width() >= 750){
+    if ($(window).width() < 734){
+      $headerMenu.css({
+        'display' : 'none'
+      })
+    } else {
       $headerMenu.css({
         'display' : 'flex'
       })
     }
   });
 
-  $(window).on('resize', function () {
-    if ($(window).width() <= 750){
-      $headerMenu.css({
-        'display' : 'none'
-      })
-    }
-  });
 // hide-menu
 
   var $sliderPosts = $('.picture');
-  $sliderPosts.on('beforeChange', function (slick, curentSlide) {
-
-  });
-  $sliderPosts.on('afterChange', function (slick, curentSlide) {
-
-  });
-
   $sliderPosts.slick({
     arrows: false,
     autoplay: true,
@@ -87,13 +77,27 @@ $(function () {
       }
     ]
   });
-  $('.shop-products').slick({
-    arrows: false,
-    dots: true
-  });
-  $('.content-sort-links button').on('click', function (e) {
+
+  $('.content-sort-links .page-list').on('click', function (e) {
     e.preventDefault();
-    $('.shop-products').slick('slickNext');
+    $(this).addClass('page-list-shop');
+    $('.content-sort-links .album-list').addClass('album-list-shop-1');
+    $('.content-sort-links .album-list').removeClass('album-list-shop');
+    $('.container .shop-products .featured-product').addClass('featured-product-shop');
+    $('.container .shop-products .product-actions').addClass('product-actions-shop');
+    $('.container .shop-products .product-name').addClass('product-name-shop');
+    $('.container .shop-products .product-category').addClass('product-category-shop');
+    $('.container .shop-products .product-price').addClass('product-price-shop');
+  });
+  $('.content-sort-links .album-list').on('click', function (e) {
+    e.preventDefault();
+    $(this).addClass('album-list-shop');
+    $('.content-sort-links .page-list').removeClass('page-list-shop');
+    $('.container .shop-products .featured-product').removeClass('featured-product-shop');
+    $('.container .shop-products .product-actions').removeClass('product-actions-shop');
+    $('.container .shop-products .product-name').removeClass('product-name-shop');
+    $('.container .shop-products .product-category').removeClass('product-category-shop');
+    $('.container .shop-products .product-price').removeClass('product-price-shop');
   });
 
 });
