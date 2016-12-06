@@ -100,5 +100,29 @@ $(function () {
     $('.container .shop-products .product-price').removeClass('product-price-shop');
   });
 
+ // $('select').uniform();
+
+  $('select').chosen({disable_search_threshold: 10});
+
+  $('.product-preview .thumbs').slick({
+    vertical: true,
+    verticalSwiping: true,
+    slidesToShow: 3,
+    arrows: false
+  });
+
+  $('.thumbs a').on('click', function (e) {
+    e.preventDefault();
+    var linkAttr = $(this).attr('href');
+
+    $('.product-image img').attr('src', linkAttr)
+  });
+
+  $('.tabs a').on('click', function (e) {
+    e.preventDefault();
+    var tabId = $(this).attr('href');
+
+
+  });
 });
 

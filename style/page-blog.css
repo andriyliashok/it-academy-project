@@ -89,11 +89,14 @@
   color: #333333;
   position: relative;
   padding: 12px 12px 12px 45px;
+  display: block;
+
 }
 
 .page-blog .category ul li a:hover{
   color: #be926f;
 }
+
 .page-blog .category ul li a:before{
   content: "";
   width: 25px;
@@ -101,16 +104,17 @@
   display: block;
   float: left;
   position: absolute;
-  top: -4px;
   left: 13px;
 }
 
 .by-category + ul li a:before{
-   background: url("images/category-list.png") no-repeat center;
+   background: url("images/category-list.png") no-repeat center left;
 }
+
 .archives + ul li a:before{
-  background: url("images/category-list2.png") no-repeat center;
+  background: url("images/category-list2.png") no-repeat center left;
 }
+
 .category ol{
   list-style: none;
   padding-left: 0;
