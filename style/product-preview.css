@@ -204,6 +204,10 @@
   color: #666666;
 }
 
+.spinner .ui-icon-triangle-1-s{
+  margin-top: -10px;
+}
+
 .description-buttons .like {
   background: url("images/desk-butt-like.png") no-repeat center center;
 
@@ -298,10 +302,14 @@
 .description-post .new-post{
   margin-top: 30px;
   border-top: none;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 
 .description-post .pointer-name{
   letter-spacing: normal;
   font-size: 1.4em;
+}
+
+.description-post .featured-product{
+  margin-top: 0;
 }

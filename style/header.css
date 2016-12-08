@@ -1,13 +1,12 @@
 .header-top {
   background: #2b2b2b;
-  color: #3b3b3b;
-
+  /* color: #3b3b3b; */
 }
 
 .header-top .container {
   display: flex;
   justify-content: space-between;
-  padding: 5px 0;
+  padding: 0px 0 8px;
   font-size: 0.934em;
 }
 .header-top .container a{
@@ -30,7 +29,7 @@ header  .logo{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 26px 0;
+  padding: 29px 0 26px;
 }
 
 @media (max-width: 500px) {
@@ -65,6 +64,7 @@ header form input{
   left: 25px;
   height: inherit;
   outline: none;
+  color: #7f7f7f;
 }
 
 header form button{
