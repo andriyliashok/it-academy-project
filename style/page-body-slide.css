@@ -7,7 +7,7 @@
 
 
 .new-post{
-  border-top: 1px solid #e6e6e6;
+  /* border-top: 1px solid #e6e6e6; */
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
@@ -62,7 +62,7 @@
   height: 23px;
   position: absolute;
   top: -5px;
-  right: -13px;
+  right: -14px;
   opacity: 1;
   transition: opacity 0.3s;
 }
@@ -82,7 +82,7 @@
 
 .new-post .pointer-name{
   font-size: 1.2em;
-  letter-spacing: 4px;
+  /* letter-spacing: 4px; */
 }
 
 @media (max-width: 400px){
@@ -109,11 +109,11 @@
   }
 }
 
-.slide .slide1:hover{
+.post-home .slide .slide1:hover{
   border-bottom: 1px solid #be926f;
 }
 
-.slide img{
+.post-home .slide img{
   width: 267px;
   height: 206px;
   border: 1px solid #ffe0cb;

@@ -38,7 +38,175 @@
 }
 
 .product-description{
-  padding: 0 30px;
+  padding: 0 33px;
+}
+
+.rating{
+  margin: 20px 0;
+}
+
+.name-category{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.name-category div:first-child{
+  background: url(images/name-category-marker.png) no-repeat left;
+  padding-left: 30px;
+}
+
+.name-category div{
+  color: #333333;
+  margin-right: 26px;
+}
+
+.name-category span{
+  color: #666666;
+}
+.product-description .product-price{
+  color: #ff0000;
+  font-size: 1.9em;
+}
+
+.product-description .product-price del{
+  color: #d8d8d8;
+}
+
+.color-checker{
+   margin: 26px 0 30px;
+   font-size: 1.3em;
+   line-height: 1.3em;
+ }
+
+.color-checker label{
+ margin-left: 8px;
+}
+
+.color-checker .checker{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #cccccc;
+  box-shadow: inset 0 0 0 2px #f7f7f7;
+  position: relative;
+}
+
+.color-checker .checker-1{
+ background: #be926f;
+}
+.color-checker .checker-2{
+  background: #355e60;
+}
+.color-checker .checker-3{
+  background: #403634;
+}
+.color-checker .checker-4{
+  background: #807875;
+}
+.color-checker .checker-5{
+  background: #f71751;
+}
+
+.color-checker .checker input{
+  opacity: 0;
+}
+.color-checker .checker input:checked + span{
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  transform: rotate(-45deg);
+}
+
+.description-buttons{
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.description-buttons a{
+  display: block;
+  text-decoration: none;
+  color: #ffffff ;
+}
+
+.description-buttons .add {
+  background: #be926f;
+  padding: 14px 11px;
+  transition: background 0.3s;
+  font-size: 1.3em;
+}
+
+.description-buttons .add:hover{
+  background: #c89a75;
+}
+
+.description-buttons .add:active {
+  background: #be926f;
+  padding-top: 15px;
+  box-shadow: inset 0 0 5px 1px #000000;
+}
+
+.description-buttons .row, .like {
+  border: 1px solid #999999;
+  width: 58px;
+
+}
+
+.description-buttons .row {
+  background: url("images/desk-butt-row.png") no-repeat center center;
+  margin-right: 16px;
+}
+
+
+.spinner .ui-spinner{
+  width: 86px;
+  height: 58px;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+}
+
+.spinner .ui-spinner input{
+  width: 61px;
+  height: 44px;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+  background: #f7f7f7;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.spinner .ui-spinner .ui-button{
+  border-bottom: 1px solid #cccccc;
+  width: 28px;
+}
+.spinner .ui-spinner .ui-button:active{
+  border-radius: 0;
+  border: 1px solid #be926f;
+  background: #be926f;
+
+}
+
+.spinner .ui-spinner .ui-button + .ui-button{
+  border-bottom: none;
+}
+
+.spinner .ui-spinner .ui-button-icon{
+  background-image: none;
+  font-size: 1.6em;
+  line-height: 16px;
+  text-indent: 0;
+  color: #666666;
+}
+
+.description-buttons .like {
+  background: url("images/desk-butt-like.png") no-repeat center center;
+
 }
 
 .product-description h1{
@@ -47,15 +215,24 @@
 }
 .product-description p{
   text-align: justify;
+  margin: 23px 0 11px;
 }
 
+.description-footer-links{
+  margin-top: 62px;
+  font-size: 1.3em;
+}
 
+.description-footer-links a{
+  margin-left: 17px;
 
+}
 
 
 /*  tabs */
 .tabs{
   color: #666666;
+  font-size: 1.3em;
 }
 
 .tabs ul{
@@ -66,29 +243,65 @@
 }
 
 .tabs ul li{
-
-  padding-right: 6px;
-
+  margin-right: 6px;
 }
 
 .tabs ul a{
   display: block;
   text-decoration: none;
   color: #666666;
-  padding: 10px 15px;
+  padding: 9px 20px;
   border: 1px solid #be926f;
   background: #ffffff;
-  border-bottom: none;
+  position: relative;
+  top: 1px;
+}
+
+.tabs ul a:active{
+  background: #be926f;
 }
 
 .tabs .tab-text{
   background: #ffffff;
   border: 1px solid #be926f;
-  margin-bottom: 100px;
+  font-size: 0.83em;
+  padding: 14px 15px 0 20px;
+  text-align: justify;
 }
 
-.tabs .second-tab, .third-tab{
+.tabs .tab-text h4{
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.tabs .tab-text p{
+  margin: 24px 0;
+  line-height: 1.5em;
+  letter-spacing: 0;
+}
+
+.tab-text div:nth-child(2){
   display: none;
 }
 
+.tab-text div:nth-child(3){
+  display: none;
+}
 
+.tabs .active{
+  border-bottom: 1px solid #ffffff;
+  color: #be926f;
+  box-shadow: inset 0 3px 0 #be926f;
+  transition: all 0.1s;
+}
+
+.description-post .new-post{
+  margin-top: 30px;
+  border-top: none;
+  padding-bottom: 15px;
+}
+
+.description-post .pointer-name{
+  letter-spacing: normal;
+  font-size: 1.4em;
+}

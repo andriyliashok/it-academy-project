@@ -212,12 +212,12 @@
   align-self: center;
 }
 
-.content .text-footer-right{
+.text-footer-right{
    display: flex;
    align-items: center;
  }
 
-.content .text-footer-right a{
+.text-footer-right a{
   margin-left: 10px;
   position: relative;
 }
@@ -268,14 +268,14 @@
   background: url("images/blog-google.png") no-repeat center center;
 }
 
-.content .text-footer-right a:hover:before{
+ .text-footer-right a:hover:before{
   opacity: 0;
 }
 
-.content .text-footer-left a{
+ .text-footer-left a{
   text-decoration: none;
   color: #666666;
 }
-.content .text-footer-left a:hover{
+ .text-footer-left a:hover{
   text-decoration: underline;
 }

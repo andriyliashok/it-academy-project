@@ -121,8 +121,17 @@ $(function () {
   $('.tabs a').on('click', function (e) {
     e.preventDefault();
     var tabId = $(this).attr('href');
-
-
+    $('.tabs a').removeClass('active');
+    $(this).addClass('active');
+    $(tabId).fadeIn().siblings().hide();
   });
+  $( "#spinner" ).spinner({
+    max: 100,
+    min: 1
+  });
+
+  $( ".spinner input" ).spinner('value', 1);
+  $('.spinner .ui-icon-triangle-1-n').text('+');
+  $('.spinner .ui-icon-triangle-1-s').text('-');
 });
 
