@@ -146,7 +146,6 @@ $(function () {
   $('.spinner .ui-icon-triangle-1-n').text('+');
   $('.spinner .ui-icon-triangle-1-s').text('-');
 
-
   $('.star').find('input').on('click', function () {
     var $star = $(this).closest('label');
     $star.prevAll().addClass('star-1');
