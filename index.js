@@ -50,6 +50,7 @@ $(function () {
   });
 
   $('.slide').slick({
+    arrows: false,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -108,7 +109,18 @@ $(function () {
     vertical: true,
     verticalSwiping: true,
     slidesToShow: 3,
-    arrows: false
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1050,
+        settings: {
+          vertical: false,
+          verticalSwiping: false,
+          slidesToShow: 1,
+          dots: true
+        }
+      }
+    ]
   });
 
   $('.thumbs a').on('click', function (e) {
@@ -133,5 +145,13 @@ $(function () {
   $( ".spinner input" ).spinner('value', 1);
   $('.spinner .ui-icon-triangle-1-n').text('+');
   $('.spinner .ui-icon-triangle-1-s').text('-');
+
+
+  $('.star').find('input').on('click', function () {
+    var $star = $(this).closest('label');
+    $star.prevAll().addClass('star-1');
+    $star.nextAll().removeClass('star-1');
+  });
+
 });
 
