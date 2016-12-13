@@ -1,0 +1,10 @@
+{
+  "name": "my-project",
+  "version": "0.0.1",
+  "description": "My project",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.4.0",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
+}

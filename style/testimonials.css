@@ -8,7 +8,7 @@
 }
 
 .testimonials .container{
-  padding: 40px 0 45px;
+  padding: 40px 15px 45px;
 }
 
 .testimonials .title {
@@ -16,6 +16,12 @@
   font-size: 2.7em;
   margin: 0;
   text-transform: uppercase;
+}
+
+@media (max-width: 430px){
+  .testimonials .title{
+    font-size: 2.3em;
+  }
 }
 
 .testimonials p {
