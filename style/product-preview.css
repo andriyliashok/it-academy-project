@@ -15,6 +15,8 @@
   height: 600px;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 
@@ -29,9 +31,16 @@
 @media (max-width: 1050px){
   .product-preview {
     max-width: 400px;
-    /* margin-left: 14px; */
   }
 }
+
+@media (max-width: 1050px){
+  .product-preview .slick-dots {
+    bottom: 10px;
+
+  }
+}
+
 
 @media (max-width: 850px){
   .product-preview {
@@ -106,13 +115,13 @@
 @media (max-width: 1050px){
   .product-preview .thumbs img{
     width: 100%;
-    height: 600px;
+    height: 598px;
   }
 }
 
 @media (max-width: 655px){
   .product-preview .thumbs img{
-    height: 500px;
+    height: 498px;
   }
 }
 
@@ -308,7 +317,7 @@
 }
 
 @media (max-width: 1050px){
-  .description-buttons .add, .row, .like{
+  .description-buttons .add, .description-buttons .row, .description-buttons .like{
     margin-left: 10px;
   }
 }
@@ -322,8 +331,8 @@
 
 @media (max-width: 1200px){
   .description-buttons .add{
-    font-size: 1em;
-    padding-top: 17px;
+    font-size: 0.9em;
+    padding-top: 19px;
   }
 }
 
@@ -343,14 +352,14 @@
 }
 
 
-.description-buttons .row, .like {
+.description-buttons .row, .description-buttons .like {
   border: 1px solid #999999;
   width: 58px;
   height: 58px;
 }
 
 @media (max-width: 430px){
-  .description-buttons .row, .like{
+  .description-buttons .row, .description-buttons .like{
     width: 29px;
     height: 27px;
     position: absolute;
@@ -470,7 +479,7 @@
 
 @media (max-width: 655px){
   .tabs ul{
-  display: block;
+  display: none;
   }
 }
 
@@ -478,11 +487,7 @@
   margin-right: 6px;
 }
 
-@media (max-width: 655px){
-  .tabs ul li{
-    margin-right: 0;
-  }
-}
+
 
 .tabs ul a{
   display: block;
@@ -516,6 +521,7 @@
 .tabs .tab-text h4{
   margin-bottom: 20px;
   margin-top: 0;
+  color: #333333;
 }
 
 .tabs .tab-text p{
@@ -530,6 +536,12 @@
 
 .tab-text div:nth-child(3){
   display: none;
+}
+
+@media (max-width: 655px){
+  .tabs div:nth-child(2), .tabs div:nth-child(3){
+    display: block;
+  }
 }
 
 .tabs .active{
