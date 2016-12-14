@@ -1,0 +1,143 @@
+
+
+.post{
+  text-transform: uppercase;
+  font-weight: 600
+}
+
+
+.new-post{
+   margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0 31px;
+}
+
+.new-post a{
+  font-size: 0.9em;
+  color: #999999;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+  display: block;
+}
+
+.new-post a:hover{
+  color: #be926f;
+}
+
+.pointer-left, .pointer-right{
+  padding-top: 7px;
+}
+
+.new-post .pointer-left a{
+  background: url("images/pointer-left-color.png") no-repeat center left;
+  opacity: 1;
+  transition: opacity 0.3s ;
+  padding-left: 34px;
+}
+
+.new-post .pointer-left a:before{
+  content: '';
+  display: block;
+  background: url("images/left.png") no-repeat center center;
+  width: 13px;
+  height: 23px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s;
+}
+
+.new-post .pointer-right a{
+  background: url("images/pointer-right-color.png") no-repeat center right;
+  opacity: 1;
+  transition: opacity 0.3s;
+  padding-right: 34px;
+}
+
+.new-post .pointer-right a:before{
+  content: '';
+  display: block;
+  background: url("images/right.png") no-repeat center center;
+  width: 13px;
+  height: 23px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: opacity 0.3s;
+}
+
+.new-post a:hover:before{
+   opacity: 0;
+ }
+
+.new-post .pointer-name{
+  font-size: 1.2em;
+
+}
+
+@media (max-width: 400px){
+  .new-post .pointer-name{
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+}
+
+.slide{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0;
+}
+
+.slide .slide1{
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media (max-width: 1200px){
+  .slide1{
+    margin: 10px;
+  }
+}
+
+.post-home .slide .slide1:hover{
+  border-bottom: 1px solid #be926f;
+}
+
+.post-home .slide img{
+  width: 267px;
+  height: 206px;
+  border: 1px solid #ffe0cb;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.slide .product-category, .slide .product-name{
+  margin: 19px 0;
+}
+
+.slide .product-name{
+  text-transform: none;
+}
+
+.slide .product-date{
+  text-transform: none;
+  color: #a9a9a9;
+  padding-bottom: 11px;
+  position: relative;
+}
+
+.slide .product-date:before{
+  content: '';
+  display: block;
+  background: url("images/clock.png") no-repeat center center;
+  width: 16px;
+  height: 16px;
+  float: left;
+  position: absolute;
+  top: 5px;
+  left: 61px;
+  margin-right: 34px;
+}
